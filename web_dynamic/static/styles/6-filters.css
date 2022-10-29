@@ -81,14 +81,32 @@ button:hover {
 .locations .popover {
     margin-top: 0%;
 }
+
+.locations .popover ul li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.locations .popover ul li ul{
+    padding-left: 20px;
+    flex: 0 1 100%;
+}
+
 .popover ul {
     list-style-type: none;
     padding-bottom: 10px;
     padding-left: 10px;
 }
+
 .popover ul li{
     padding: 4px;
     padding-left: 10px;
+}
+
+.popover ul li input[type=checkbox] {
+    margin-right: 10px;
 }
 
 .popover ul h2{

@@ -1,5 +1,5 @@
 $(() => {
-    $.get('http://0.0.0.0:5001/api/v1/status/', data => {
+    $.get('http://127.0.0.1:5001/api/v1/status/', data => {
       if (data.status === 'OK') {
         $('#api_status').addClass('available');
       } else {
@@ -9,7 +9,7 @@ $(() => {
 
     $.ajax({
       method: 'POST',
-      url: 'http://0.0.0.0:5001/api/v1/places_search/',
+      url: 'http://127.0.0.1:5001/api/v1/places_search/',
       data: '{}',
       dataType: 'json',
       contentType: 'application/json',
@@ -70,7 +70,7 @@ $(() => {
       $('article').remove();
       $.ajax({
         method: 'POST',
-        url: 'http://0.0.0.0:5001/api/v1/places_search/',
+        url: 'http://127.0.0.1:5001/api/v1/places_search/',
         data: JSON.stringify(payload),
         dataType: 'json',
         contentType: 'application/json',
