@@ -42,7 +42,6 @@
     justify-content: space-between;
     align-items: center;
     margin-top: -2%;
-    width: 100%;
 }
 
 .title_box h2 {
@@ -99,4 +98,34 @@
 
 .user {
   margin-bottom: 1.5%;
+}
+
+.places article div.amenities h2,
+.places article div.reviews h2 {
+    font-size: 16px;
+    margin: 10px 5px 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.places article div.reviews li h3 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.places article div.reviews li p {
+    font-size: 14px;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.places article div.amenities ul,
+.reviews .reviews_pad ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.places article div.reviews li:not(:first-child) {
+    padding-top: 20px;
 }
